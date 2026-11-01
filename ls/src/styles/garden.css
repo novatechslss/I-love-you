@@ -1,0 +1,13 @@
+.garden{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}
+.sky{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,#FFE5A3 0,transparent 25%),linear-gradient(180deg,#CDB8FF 0%,#FFC4DE 45%,#FFF9FC 70%,#A8C99B 100%)}
+.waterfall{position:absolute;left:50%;top:22%;width:44px;height:30%;transform:translateX(-50%);background:linear-gradient(180deg,rgba(255,255,255,.8),rgba(205,184,255,.2));border-radius:20px;filter:blur(1px);opacity:.7}
+.top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between}.branch{width:min(60%,420px)}.branch.flip{transform:scaleX(-1)}
+.bottom{position:absolute;left:0;right:0;bottom:0;height:24%}.grass{position:absolute;inset:auto 0 0;height:70%;background:linear-gradient(180deg,#A8C99B,#6fa37a);border-radius:50% 50% 0 0/22% 22% 0 0}
+.stream{position:absolute;left:0;right:0;top:0;height:22%;background:linear-gradient(90deg,#CDB8FF,#fff,#FFC4DE,#fff,#CDB8FF);background-size:200% 100%;animation:flow 6s linear infinite;opacity:.7;border-radius:50%/100% 100% 0 0}
+.row{position:absolute;left:0;right:0;bottom:6%;display:flex;justify-content:space-around;align-items:flex-end;z-index:2}.shroom{font-size:1.6rem}
+.flower{position:relative;width:calc(34px*var(--s));height:calc(34px*var(--s));animation:sway 4s ease-in-out infinite alternate;transform-origin:bottom}.flower i{position:absolute;inset:0;margin:auto;width:46%;height:70%;border-radius:50%;background:var(--c);transform-origin:50% 100%;transform:rotate(calc(var(--n,0)*72deg)) translateY(-45%);filter:drop-shadow(0 2px 3px rgba(0,0,0,.2))}
+.flower i:nth-child(2){--n:1}.flower i:nth-child(3){--n:2}.flower i:nth-child(4){--n:3}.flower i:nth-child(5){--n:4}.flower b{position:absolute;inset:0;margin:auto;width:30%;height:30%;border-radius:50%;background:var(--gold)}
+.petal{position:absolute;top:-5%;width:10px;height:14px;background:var(--pink);border-radius:80% 0 80% 0;animation:fall linear infinite}
+.firefly{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px 4px var(--gold);animation:glow 3s ease-in-out infinite}
+.bfly{position:absolute;left:-10%;font-size:1.4rem;animation:fly linear infinite}
+@media(min-width:900px){.bottom{height:30%}.flower{--s:1.5}}
